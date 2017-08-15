@@ -17,8 +17,8 @@
  * </ul>`
  * <li> `browser` - generate files needed for browser (browserify)
  * <ul>
- * <li> `browser:uncompressed` - build uncomprssed browser bundle (`btccore-*.js`)
- * <li> `browser:compressed` - build compressed browser bundle (`btccore-*.min.js`)
+ * <li> `browser:uncompressed` - build uncomprssed browser bundle (`ows-btccore-*.js`)
+ * <li> `browser:compressed` - build compressed browser bundle (`ows-btccore-*.min.js`)
  * <li> `browser:maketests` - build `tests.js`, needed for testing without karma
  * </ul>`
  * <li> `lint` - run `jshint`
@@ -54,7 +54,7 @@ function startGulp(name, opts) {
 
   opts = opts || {};
   var browser = !opts.skipBrowser;
-  var fullname = name ? 'btccore-' + name : 'btccore';
+  var fullname = name ? 'ows-btccore-' + name : 'ows-btccore';
   var files = ['lib/**/*.js'];
   var tests = ['test/**/*.js'];
   var alljs = files.concat(tests);
@@ -129,9 +129,9 @@ function startGulp(name, opts) {
     var browserifyCommand;
 
     if (name !== 'lib') {
-      browserifyCommand = browserifyPath + ' --require ./index.js:' + fullname + ' --external btccore-lib -o ' + fullname + '.js';
+      browserifyCommand = browserifyPath + ' --require ./index.js:' + fullname + ' --external ows-btccore-lib -o ' + fullname + '.js';
     } else {
-      browserifyCommand = browserifyPath + ' --require ./index.js:btccore-lib -o btccore-lib.js';
+      browserifyCommand = browserifyPath + ' --require ./index.js:ows-btccore-lib -o ows-btccore-lib.js';
     }
 
     gulp.task('browser:uncompressed', shell.task([
