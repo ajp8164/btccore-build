@@ -1,5 +1,5 @@
 {
-  "name": "ows-btccore-build",
+  "name": "btccore-build",
   "version": "0.8.0",
   "description": "A helper for common tasks to build btccore modules'",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/owstack/ows-btccore-build"
+    "url": "git://github.com/owstack/btccore-build"
   },
   "keywords": [
     "btccore"
@@ -37,9 +37,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/owstack/ows-btccore-build/issues"
+    "url": "https://github.com/owstack/btccore-build/issues"
   },
-  "homepage": "https://github.com/owstack/ows-btccore-build",
+  "homepage": "https://github.com/owstack/btccore-build",
   "dependencies": {
     "brfs": "^1.4.3",
     "browserify": "^13.1.1",
