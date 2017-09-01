@@ -1,7 +1,7 @@
 {
   "name": "btccore-build",
   "version": "0.0.1",
-  "description": "A helper for common tasks to build btccore modules'",
+  "description": "A helper for common tasks to build btccore modules.",
   "main": "index.js",
   "scripts": {
     "test": "gulp test"
@@ -12,28 +12,6 @@
   },
   "keywords": [
     "btccore"
-  ],
-  "contributors": [
-    {
-      "name": "Esteban Ordano",
-      "email": "esteban@bitpay.com"
-    },
-    {
-      "name": "Manuel Araoz",
-      "email": "maraoz@bitpay.com"
-    },
-    {
-      "name": "Braydon Fuller",
-      "email": "braydon@bitpay.com"
-    },
-    {
-      "name": "Yemel Jardi",
-      "email": "yemel@bitpay.com"
-    },
-    {
-      "name": "Matias Alejo Garcia",
-      "email": "ematiu@gmail.com"
-    }
   ],
   "license": "MIT",
   "bugs": {
